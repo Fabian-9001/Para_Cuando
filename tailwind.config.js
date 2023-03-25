@@ -22,9 +22,10 @@ module.exports = {
         "app-gray": "#A7A6A7",
         "app-grayLight": "#D9D9D9",
         "app-grayLighter": "#F8F7FA",
-        "app-red": "##EF3F47"
+        "app-red": "##EF3F47",
+        "app-white": "#ffff"
       },
-      shadow: {
+      boxShadow: {
         "app-thin": '0px 2px 4px rgba(0, 0, 0, 0.25)'
       }
     },
