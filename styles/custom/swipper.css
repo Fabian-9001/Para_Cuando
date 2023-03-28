@@ -1,0 +1,4 @@
+.brandSlider .swiper-wrapper {
+  transition-timing-function: linear;
+  padding: 5px 0;
+}

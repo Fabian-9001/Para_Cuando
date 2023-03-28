@@ -1,8 +1,11 @@
-import React from 'react';
+export interface ILike extends React.ComponentPropsWithoutRef<'svg'> {
+  value?: true | false;
+}
 
-const LikeButton = () => {
+const LikeButton: React.FC<ILike> = ({ ...svgProps }) => {
   return (
     <svg
+      {...svgProps}
       width="49"
       height="49"
       viewBox="0 0 49 49"

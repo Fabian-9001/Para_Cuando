@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 const EventCard = () => {
+  const router = useRouter();
   return (
     <div className="w-[300px] h-[455px] bg-app-white shadow-app-thin rounded-[20px] overflow-hidden">
       <div className="w-full h-[240px] relative overflow-hidden">
@@ -15,7 +17,10 @@ const EventCard = () => {
         />
       </div>
       <div className="w-full pt-4 pb-10 px-5">
-        <p className="app-title-3 text-app-blackLight truncate">
+        <p
+          onClick={() => router.push('/event/1')}
+          className="app-title-3 text-app-blackLight truncate"
+        >
           Concierto de Lady Gaga
         </p>
         <p className="h-[70px] overflow-hidden app-text-1 text-app-grayDark mt-1 mb-3 relative">

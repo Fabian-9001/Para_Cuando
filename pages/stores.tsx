@@ -1,11 +1,16 @@
-import HomeHero from '@/components/heros/HomeHero';
+import TopicHero from '@/components/heros/TopicHero';
 import SliderCards from '@/components/sliders/EventSlider';
 import SuggestSlider from '@/components/sliders/SuggestSlider';
 
-export default function Home() {
+export const Stores = () => {
   return (
     <div className="overflow-hidden">
-      <HomeHero />
+      <TopicHero
+        route="Home / Marcas"
+        title="Marcas y tiendas"
+        description="Descubre las marcas y tiendas que la gente quiere cerca"
+        img="/img/topics/stores.png"
+      />
       <div className="app-container lg:px-0">
         <section className="mt-20">
           <div className="mb-9">
@@ -46,4 +51,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Stores;
