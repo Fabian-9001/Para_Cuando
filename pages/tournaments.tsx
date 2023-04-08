@@ -1,16 +1,18 @@
 import TopicHero from '@/components/heros/TopicHero';
+import TopicSubNavbar from '@/components/navbars/TopicSubNavbar';
 import SliderCards from '@/components/sliders/EventSlider';
 import SuggestSlider from '@/components/sliders/SuggestSlider';
 
 export const Tournaments = () => {
   return (
-    <div className="overflow-hidden">
+    <div>
       <TopicHero
         route="Home / Torneo"
         title="Torneos y eventos"
         description="Descubre los torneos y eventos que la gente quiere cerca"
         img="/img/topics/tournaments.png"
       />
+      <TopicSubNavbar />
       <div className="app-container lg:px-0">
         <section className="mt-20">
           <div className="mb-9">

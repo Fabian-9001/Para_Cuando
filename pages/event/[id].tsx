@@ -1,22 +1,26 @@
 import Button from '@/components/buttons/Button';
+import TopicSubNavbar from '@/components/navbars/TopicSubNavbar';
 import SliderCards from '@/components/sliders/EventSlider';
 import SuggestSlider from '@/components/sliders/SuggestSlider';
 import Image from 'next/image';
 
 export const Stores = () => {
   return (
-    <div className="overflow-hidden">
+    <div>
+      <TopicSubNavbar />
       <div className="app-container lg:px-0 ">
         <section className="grid mt-14 mb-20 md:grid-cols-2 md:grid-rows-[330px,50px] lg:grid-cols-[410px,540px]">
           <div className="text-app-black md:pr-5">
-            <p className="app-subTitle-1">Artista / Pop / Rock</p>
-            <p className="app-title-4">Concierto de Lady Gaga</p>
-            <p className="app-text-1 text-app-grayDark mt-6 mb-8">
+            <p className="app-subTitle-1 mb-2 truncate">Artista / Pop / Rock</p>
+            <p className="app-title-4 sm:app-title-1 h-[115px] overflow-y-auto">
+              Concierto de Lady Gaga
+            </p>
+            <p className="app-text-1 text-app-grayDark mt-6 mb-5 h-[80px] overflow-y-auto">
               El concierto con la temática de Lady gaga en Las Vegas. El
               concierto con la temática de Lady gaga en Las Vegas.El concierto
               con la temática.
             </p>
-            <p className="app-text-3 text-app-blue">ladygaga.com</p>
+            <p className="app-text-3 text-app-blue truncate">ladygaga.com</p>
             <div className="flex gap-3 app-text-3 text-app-blackLight mt-3">
               <Image src={'/svg/person.svg'} width={16} height={16} alt="" />
               <p>90’800’756 votos</p>
@@ -31,7 +35,7 @@ export const Stores = () => {
               alt=""
             />
           </div>
-          <Button className="mt-8 md:mt-0 md:mr-5 " size="md" color="blue">
+          <Button className="mt-8 duration-300 hover:scale-105 md:mt-0 md:mr-5" size="md" color="blue">
             Votar
           </Button>
         </section>

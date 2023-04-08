@@ -1,13 +1,18 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
 const Navbar = () => {
   const [user, setUser] = useState(false);
+  const router = useRouter();
 
   return (
-    <div className="app-banner h-[70px] bg-app-black px-4">
-      <nav className="max-w-[1280px] mx-auto h-full flex items-center justify-between">
+    <div className="h-[70px] bg-app-black">
+      <nav className="app-container max-w-[1280px] h-full flex items-center justify-between">
         <Image
+          className="cursor-pointer"
+          onClick={() => router.push('/')}
           priority={true}
           src={'/svg/NavLogo.svg'}
           width={80}
@@ -21,8 +26,8 @@ const Navbar = () => {
           </li>
           {!user ? (
             <div className="flex gap-5">
-              <li>Log In</li>
-              <li>Sign Up</li>
+              <Link href={'sign-in'}>Log In</Link>
+              <Link href={'sign-up'}>Sign Up</Link>
             </div>
           ) : (
             <li className="flex gap-3 items-center">

@@ -17,7 +17,7 @@
   }
 
   .app-container {
-    @apply relative m-auto px-5 max-w-[950px];
+    @apply w-full relative m-auto px-5 max-w-[950px];
   }
 
   .app-title-1 {
@@ -34,6 +34,10 @@
 
   .app-title-4 {
     @apply font-black text-3xl leading-10;
+  }
+
+  .app-title-5 {
+    @apply font-semibold text-[32px] leading-5;
   }
 
   .app-subTitle-1 {
@@ -54,6 +58,16 @@
 
   .app-text-3 {
     @apply font-medium text-sm leading-4;
+  }
+
+  .app-text-4 {
+    @apply font-normal text-xs leading-5;
+  }
+
+  /*Animations*/
+  .app-animation-scaleInvert:hover img {
+    transform: scaleX(-1);
+    transition: 0.5s;
   }
 }
 

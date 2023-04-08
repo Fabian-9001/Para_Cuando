@@ -34,7 +34,10 @@ const SuggestSlider = () => {
       >
         {suggestliste?.map((suggest) => (
           <SwiperSlide key={suggest}>
-            <Button color="white" className="border-app-gray border-[1px]">
+            <Button
+              color="white"
+              className="border-app-gray border-[1px] duration-300 hover:scale-110"
+            >
               Entretenimiento
             </Button>
           </SwiperSlide>

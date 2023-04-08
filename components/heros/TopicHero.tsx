@@ -17,8 +17,9 @@ const TopicHero: React.FC<IHeroTopic> = ({
   return (
     <div
       style={{ backgroundImage: `url(${img})` }}
-      className={`app-banner h-auto min-h-52 pt-6 pb-10 relative bg-center bg-no-repeat bg-cover`}
+      className={`min-h-52 pt-6 pb-10 relative bg-center bg-no-repeat bg-cover`}
     >
+      <span className="w-full h-full bg-[rgba(0,0,0,0.3)] brightness-100 absolute left-0 top-0"></span>
       <div className="app-container h-full text-app-white">
         <Link href={'/'} className="app-subTitle-1">
           {route}

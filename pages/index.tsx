@@ -4,7 +4,7 @@ import SuggestSlider from '@/components/sliders/SuggestSlider';
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div>
       <HomeHero />
       <div className="app-container lg:px-0">
         <section className="mt-20">

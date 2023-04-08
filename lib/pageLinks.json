@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Marcas y tiendas",
+    "link": "/stores"
+  },
+  {
+    "id": 2,
+    "name": "Artistas y conciertos",
+    "link": "/concerts"
+  },
+  {
+    "id": 3,
+    "name": "Torneos",
+    "link": "/tournaments"
+  }
+]
